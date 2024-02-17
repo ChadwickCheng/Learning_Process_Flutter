@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 
 import 'routes/Routes.dart';
+import 'pages/Tabs.dart';
 
 void main() => runApp(MyApp());
 class MyApp extends StatelessWidget {  
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner:false ,  //去掉debug图标
-      // home:Tabs(),   
+      home:Tabs(),   
       initialRoute: '/appBarDemo',     //初始化的时候加载的路由
       onGenerateRoute: onGenerateRoute     
     );
